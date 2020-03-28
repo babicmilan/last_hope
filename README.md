@@ -1,1 +1,1 @@
-# last_hope
+# biti ili ne biti
