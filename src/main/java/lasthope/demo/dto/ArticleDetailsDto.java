@@ -1,27 +1,13 @@
-package lasthope.demo.domain;
+package lasthope.demo.dto;
 
-import org.springframework.data.elasticsearch.annotations.Document;
-import org.springframework.data.elasticsearch.annotations.Field;
-import org.springframework.data.elasticsearch.annotations.FieldType;
-
-@Document(indexName = "article", type = "pdf", shards = 1)
-public class Article {
+public class ArticleDetailsDto {
 
     private Long id;
-
     private String name;
-
     private String title;
-
     private String authorName;
-
     private String authorSurname;
-
     private String keyWords;
-
-    @Field(type = FieldType.Text, analyzer = "serbian_analyzer")
-    private String content;
-
     private String scientificField;
 
     public Long getId() {
@@ -70,14 +56,6 @@ public class Article {
 
     public void setKeyWords(String keyWords) {
         this.keyWords = keyWords;
-    }
-
-    public String getContent() {
-        return content;
-    }
-
-    public void setContent(String content) {
-        this.content = content;
     }
 
     public String getScientificField() {

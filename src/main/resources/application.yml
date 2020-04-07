@@ -1,0 +1,4 @@
+upload.directory: /Users/babic/git/last_hope/articles/
+
+logging.level.web: debug
+logging.level.root: debug
